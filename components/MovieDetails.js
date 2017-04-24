@@ -11,7 +11,6 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import MovieItem from './MovieItem';
 
 class MovieDetails extends Component {
-
 	constructor(props) {
     super(props);
     this.state = {
@@ -26,7 +25,6 @@ class MovieDetails extends Component {
   };
 
   componentWillUnmount() {
-
   };
 
   getMovieDetails = () => {
@@ -178,5 +176,4 @@ const styles = StyleSheet.create({
     textAlign: 'left'
   }
 });
-
 module.exports = MovieDetails;

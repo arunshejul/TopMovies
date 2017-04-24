@@ -11,6 +11,8 @@ import {
 
 import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
+
+//To Show / Hide NavigationBar
 class NavigationBar extends Navigator.NavigationBar {
   render() {
     let routes = this.props.navState.routeStack;
@@ -27,7 +29,6 @@ class NavigationBar extends Navigator.NavigationBar {
 }
 
 export default class TopMovies extends Component {
-
   componentDidMount = () => {
     BackAndroid.addEventListener('hardwareBackPress', this.handleBackButton);
   };

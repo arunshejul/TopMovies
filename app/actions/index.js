@@ -5,7 +5,6 @@ import {
 } from './types';
 
 var reducers = {
-
 	requestMovies: function(key) {
 		return {
 			type: REQUEST_MOVIES,
@@ -30,7 +29,5 @@ var reducers = {
 				})
 				.catch(error => { console.log('request failed', error); });
 	}
-
 };
-
 module.exports = reducers;

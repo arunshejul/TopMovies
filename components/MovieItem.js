@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 
 class MovieItem extends Component {
-
 	constructor(props) {
     super(props);
   }
@@ -26,6 +25,7 @@ class MovieItem extends Component {
           'imdbID' : this.props.imdbID
         }
     };
+
 		return (
       <TouchableHighlight underlayColor="transparent" onPress={() => this.handleNextPress(configMovieDetails)}>
         <View style={styles.container}>
@@ -67,5 +67,4 @@ const styles = StyleSheet.create({
     textAlign: 'left'
   }
 });
-
 module.exports = MovieItem;

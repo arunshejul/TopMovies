@@ -16,10 +16,8 @@ import { fetchMovies } from '../app/actions/index';
 import Spinner from 'react-native-loading-spinner-overlay';
 
 class MovieList extends Component {
-
   constructor() {
     super();
-
     this.state = {
       movieName: 'iron man',
       isLoading: false,
@@ -35,13 +33,10 @@ class MovieList extends Component {
         movies: Store.getState().movies.items
       });
     });
-
     this.handleSearchResult();
-
   };
 
   componentWillUnmount() {
-
   };
 
   handleSearchResult = () => {
@@ -143,5 +138,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#F0F0F0',
   }
 });
-
 export default MovieList;
